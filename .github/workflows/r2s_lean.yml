@@ -62,6 +62,17 @@ jobs:
           git clone https://github.com/vernesong/OpenClash.git tmp
           mv tmp/luci-app-openclash friendlywrt-rk3328/friendlywrt/package
           rm -rf tmp
+          
+#       - name: Install Clash Binaries
+#         run: |
+#           cd friendlywrt-rk3328/friendlywrt/package/base-files/files
+#           mkdir -p etc/clash
+#           wget -qO- https://github.com/Dreamacro/clash/releases/download/v1.0.0/clash-linux-armv8-v1.0.0.gz | gunzip -c > etc/clash/clash
+#           chmod +x etc/clash/clash
+#           mkdir -p etc/openclash/core
+#           cp etc/clash/clash etc/openclash/core/
+#           mkdir -p usr/share/clash
+#           echo 1.0.0 > usr/share/clash/core_version
 
       - name: Install Clash Binaries
         run: |
