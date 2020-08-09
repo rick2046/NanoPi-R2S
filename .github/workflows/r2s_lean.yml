@@ -57,11 +57,11 @@ jobs:
           sed -i 's/^src-git luci.*/src-git luci https:\/\/github.com\/coolsnowwolf\/luci/' feeds.conf.default
           sed -i 's/^src-git packages.*/src-git packages https:\/\/github.com\/coolsnowwolf\/packages/' feeds.conf.default
 
-      - name: Install OpenClash
-        run: |
-          git clone https://github.com/vernesong/OpenClash.git tmp
-          mv tmp/luci-app-openclash friendlywrt-rk3328/friendlywrt/package
-          rm -rf tmp
+#      - name: Install OpenClash
+#        run: |
+#          git clone https://github.com/vernesong/OpenClash.git tmp
+#          mv tmp/luci-app-openclash friendlywrt-rk3328/friendlywrt/package
+#          rm -rf tmp
           
 #       - name: Install Clash Binaries
 #         run: |
