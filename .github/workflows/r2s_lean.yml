@@ -4,8 +4,8 @@ on:
   push:
     paths:
       - 'CHANGELOG.md'
-  schedule:
-      - cron: 55 02 * 8 8
+#  schedule:
+#      - cron: 55 02 * 8 8
 
 jobs:
 
